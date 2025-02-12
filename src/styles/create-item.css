@@ -1,0 +1,100 @@
+
+.create__item{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.create__item h3{
+    color: #f4ebdc ;
+}
+
+form{
+    width: 85%;
+}
+
+.form__input input, .form__input textarea {
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #af9c9c;
+}
+
+.form__input input::placeholder,
+.form__input textarea::placeholder {
+    color: #000000 ;
+}
+
+.form__input{
+    margin-bottom: 15px;
+}
+
+.form__input label{
+    color: #f4ebdc ;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.form__input .upload__input {
+    border: none;
+    box-shadow: none;
+    background: none;
+}
+
+::-webkit-calendar-picker-indicator{
+    filter: invert(1) ;
+    cursor: pointer;
+}
+
+
+/*////////////////////////////////////*/
+.add-btn {
+    padding: 8px 25px;
+    background: white;
+    margin: auto;
+    width: 85% ;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-btn a {
+    text-decoration: none;
+    color: #493c34  ;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.add-btn i {
+    color: #493c34  ;
+    font-weight: 900;
+}
+
+.add-btn:hover{
+    background: #f3c87b  ;
+}
+
+.add-btn:hover a{
+    color: white;
+}
+
+.add-btn:hover i{
+    color: white;
+}
+/*//////////////////////////////////////*/
+
+@media only screen and (max-width:576px){
+    .create__item{
+        margin-top: 15px;
+    }
+}

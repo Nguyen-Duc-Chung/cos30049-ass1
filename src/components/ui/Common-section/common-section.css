@@ -1,0 +1,16 @@
+
+.common__section{
+    background: url('../../../assets/images/bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    block-size: cover;
+    padding-top: 200px;
+    padding-bottom: 120px;
+}
+
+.common__section h2 {
+     color: #fff;
+     font-size: 3rem;
+     font-family:'Prata';
+     font-weight: 600;
+}
