@@ -1,17 +1,17 @@
-.single__nft__card {
+.main_card_car {
     padding: 10px;
     background: rgba(28,13,6,0.6) !important;
     border-radius: 10px;
 }
 
-.nft__img img{
+.car_img img{
     border-radius: 10px;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.nft__img {
+.car_img {
     width: 100%;
     height: 160px;
     overflow: hidden; /* Ensures the image doesn't overflow */
@@ -21,23 +21,23 @@
     margin-bottom: 15px;
 }
 
-.nft__title{
+.car_title{
     margin-bottom: 20px;
 }
 
-.nft__title a{
+.car_title a{
     color: #fff;
     font-size: 1.4rem;
     text-decoration: none;
     transition: 0.3s;
 }
 
-.nft__title a:hover{
+.car_title a:hover{
     font-size: 1.6rem;
     color: #ff8047 ;
 }
 
-.creator__infor h6{
+.creator_infor h6{
     font-size: 1rem;
     color: #fff;
     opacity: 90%;
@@ -45,14 +45,14 @@
     font-weight: 300;
 }
 
-.creator__infor p{
+.creator_infor p{
     font-size: 1.1rem;
     color: #fff ;
     margin-bottom: 0;
     font-weight: 500;
 }
 
-.bid__btn , .detail__btn{
+.buy_btn , .detail_btn{
     border: none;
     outline: none;
     padding: 5px 22px;
@@ -64,12 +64,12 @@
     transition: 0.3s;
 }
 
-button.detail__btn a{
+button.detail_btn a{
     text-decoration: none;
     color: #fff ;
 }
 
-.bid__btn:hover , .detail__btn:hover{
+.buy_btn:hover , .detail_btn:hover{
     background:#ff8047 ;
     color: #fff;
     font-size: 1rem;
@@ -77,46 +77,46 @@ button.detail__btn a{
 
 
 @media only screen and (max-width: 992px){
-    .nft__title a{
+    .car_title a{
         font-size: 0.9rem !important ;
     }
 
-    .creator__infor h6{
+    .creator_infor h6{
         font-size: 0.6rem !important ;
     }
 
-    .creator__infor p {
+    .creator_infor p {
         font-size: 0.7rem !important ;
     }
 
-    .bid__btn{
+    .buy_btn{
         padding: 4px 20px !important ;
         font-size: 0.6em !important ;
     }
 
-    .detail__btn a {
+    .detail_btn a {
         font-size: 0.6rem !important ; 
     }
 }
 
 @media only screen and (max-width: 1400px){
-    .creator__infor h6{
+    .creator_infor h6{
         font-size: 0.7rem !important ;
     }
 
-    .creator__infor p {
+    .creator_infor p {
         font-size: 0.75rem !important ;
     }
 
 }
 
 @media only screen and (max-width: 1398px){
-    .bid__btn{
+    .buy_btn{
         padding: 4px 20px !important ;
         font-size: 0.6em !important ;
     }
 
-    .detail__btn  {
+    .detail_btn  {
         font-size: 0.6rem !important ; 
         padding: 4px 20px !important ;
     }

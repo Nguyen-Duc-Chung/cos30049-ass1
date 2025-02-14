@@ -53,14 +53,14 @@ export const TRANSACTIONS = [
   }
 ];
 
-export const NFT__DATA = [
+export const DATA_CARS = [
   {
     id: "01",
     title: "Tesla Model S",
     desc: "Good car",  
     imgUrl: img01,
     creator: "0x49c...EfE5",
-    currentBid: 5.89,
+    price: 5.89,
     category: "Sport",
     createDate: "01/01/2025",
   },
@@ -71,7 +71,7 @@ export const NFT__DATA = [
     desc: "Good car",  
     imgUrl: img02,
     creator: "0x49c...EfE5",
-    currentBid: 5.09,
+    price: 5.09,
     category: "Coupe",
     createDate: "01/01/2025",
   },
@@ -82,7 +82,7 @@ export const NFT__DATA = [
     desc: "Good car",  
     imgUrl: img03,
     creator: "0x49c...EfE5",
-    currentBid: 6.89,
+    price: 6.89,
     category: "Electric",
     createDate: "01/01/2025",
   },
@@ -93,7 +93,7 @@ export const NFT__DATA = [
     desc: "Good car",  
     imgUrl: img04,
     creator: "0x49c...EfE5",
-    currentBid: 7.89,
+    price: 7.89,
     category: "Convertible",
     createDate: "01/01/2025",
   },
@@ -104,7 +104,7 @@ export const NFT__DATA = [
     desc: "Good car",  
     imgUrl: img05,
     creator: "0x49c...EfE5",
-    currentBid: 4.89,
+    price: 4.89,
     category: "Convertible",
     createDate: "01/01/2025",
   },
@@ -115,7 +115,7 @@ export const NFT__DATA = [
     desc: "Good car", 
     imgUrl: img06,
     creator: "0x49c...EfE5",
-    currentBid: 4.99,
+    price: 4.99,
     category: "Convertible",
     createDate: "01/01/2025",
   },
@@ -126,7 +126,7 @@ export const NFT__DATA = [
     desc: "Good car",  
     imgUrl: img07,
     creator: "0x49c...EfE5",
-    currentBid: 5.89,
+    price: 5.89,
     category: "Convertible",
     createDate: "01/01/2025",
   },
@@ -137,7 +137,7 @@ export const NFT__DATA = [
     desc: "Good car",  
     imgUrl: img08,
     creator: "0x49c...EfE5",
-    currentBid: 5.89,
+    price: 5.89,
     category: "Convertible",
     createDate: "01/01/2025",
   },
@@ -148,55 +148,55 @@ export const NFT__DATA = [
     desc: "Good car",  
     imgUrl: img09,
     creator: "0x49c...EfE5",
-    currentBid: 5.89,
+    price: 5.89,
     category: "Convertible",
     createDate: "01/01/2025",
   },
 ];
 
-export const SELLER__DATA = [
-  {
-    id: "01",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam adipisci cupiditate officia",
-    sellerName: "0x49c...EfE5",
-    currentBid: 5.89,
-  },
+// export const SELLER__DATA = [
+//   {
+//     id: "01",
+//     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam adipisci cupiditate officia",
+//     sellerName: "0x49c...EfE5",
+//     price: 5.89,
+//   },
 
-  {
-    id: "02",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam adipisci cupiditate officia",
-    sellerName: "0x72b...A1F4",
-    currentBid: 5.89,
-  },
+//   {
+//     id: "02",
+//     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam adipisci cupiditate officia",
+//     sellerName: "0x72b...A1F4",
+//     price: 5.89,
+//   },
 
-  {
-    id: "03",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam adipisci cupiditate officia",
-    sellerName: "0x3d6...B3C7",
-    currentBid: 5.89,
-  },
+//   {
+//     id: "03",
+//     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam adipisci cupiditate officia",
+//     sellerName: "0x3d6...B3C7",
+//     price: 5.89,
+//   },
 
-  {
-    id: "04",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam adipisci cupiditate officia",
-    sellerName: "0x8a2...D4E9",
-    currentBid: 5.89,
-  },
+//   {
+//     id: "04",
+//     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam adipisci cupiditate officia",
+//     sellerName: "0x8a2...D4E9",
+//     price: 5.89,
+//   },
 
-  {
-    id: "05",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam adipisci cupiditate officia",
-    sellerName: "0x9b4...C6F8",
-    currentBid: 5.89,
-  },
+//   {
+//     id: "05",
+//     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam adipisci cupiditate officia",
+//     sellerName: "0x9b4...C6F8",
+//     price: 5.89,
+//   },
 
-  {
-    id: "06",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam adipisci cupiditate officia",
-    sellerName: "0x6c1...F7A3",
-    currentBid: 5.89,
-  },
+//   {
+//     id: "06",
+//     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam adipisci cupiditate officia",
+//     sellerName: "0x6c1...F7A3",
+//     price: 5.89,
+//   },
 
-];
+// ];
 
 

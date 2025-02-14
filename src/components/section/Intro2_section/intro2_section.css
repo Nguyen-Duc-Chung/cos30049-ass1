@@ -1,14 +1,14 @@
-.hero__section {
+.intro2_section {
     margin-top: 120px;
 }
 
-.hero__content h2{
+.intro2_content h2{
     line-height: 55px;
     color: white;
     font-size: 2.5rem;
 }
 
-.hero__content h2 span {
+.intro2_content h2 span {
     background: linear-gradient(-45deg, #e2c49e, #893c21, #a03e28, #29160f);
     background-size: 100% 100%;
     background-clip: text;
@@ -18,11 +18,11 @@
     display: inline-block;
 }
 
-.hero__btns{
+.intro2__btns{
     margin-top: 30px;
 }
 
- .hero__btns button {
+ .intro2__btns button {
     border: none;
     outline: none;
     padding: 7px 25px !important;
@@ -33,68 +33,68 @@
     transition: 0.3s;
 }
 
-.hero__btns button i{
+.intro2__btns button i{
     color: #fff;
     font-size: 1rem;
 }
 
-.hero__btns button a {
+.intro2__btns button a {
     text-decoration: none;
     color: #fff;
 }
 
-.hero__btns button:hover{
+.intro2__btns button:hover{
     background:#ff8047 ;
     color: #fff;
 }
 
-.hero__img{
+.intro2_img{
     width: 600px;
     height: auto;
     margin-left: auto;
 }
 
-.hero__img img{
+.intro2_img img{
     border-radius: 7px;
 }
 
 @media only screen and (max-width: 992px) {
-    .hero__img{
+    .intro2_img{
         width: 400px;
     }
 
-    .hero__section{
+    .intro2_section{
         margin-top: 90px;
     }
 
-    .hero__content h2 {
+    .intro2_content h2 {
         font-size: 1.5rem;
         line-height: 40px;
     }
 
-    .hero__content p {
+    .intro2_content p {
         font-size: 0.8rem;
         line-height: 25px;
     }
 
-    .create__btn, .explore__btn{
+    .create_btn, .explore_btn{
         padding: 4px 25px !important ;
     }
 
-    .create__btn a , .explore__btn a{
+    .create_btn a , .explore_btn a{
        font-size: 0.7rem;
     }
 }
 
 @media only screen and (max-width: 768px){
-    .hero__img{
+    .intro2_img{
         width: 100%;
         margin: 50px auto ;
         }
 }
 
 @media only screen and (max-width: 576px){
-    .hero__img{
+    .intro2_img{
         width: 100%;
         margin: 50px auto ;
         }

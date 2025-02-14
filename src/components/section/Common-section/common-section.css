@@ -1,5 +1,5 @@
 
-.common__section{
+.title_section{
     background: url('../../../assets/images/bg.jpg');
     background-position: center center;
     background-repeat: no-repeat;
@@ -8,9 +8,10 @@
     padding-bottom: 120px;
 }
 
-.common__section h2 {
+.title_section h2 {
      color: #fff;
      font-size: 3rem;
      font-family:'Prata';
      font-weight: 600;
+     text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
 }

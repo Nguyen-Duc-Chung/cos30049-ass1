@@ -7,7 +7,7 @@ import {Container} from 'reactstrap'
 function CommonSection({title}){
     return(
     <>
-    <section className="common__section" >
+    <section className="title_section" >
         <Container className="text-center">
             <h2>{title}</h2>
         </Container>

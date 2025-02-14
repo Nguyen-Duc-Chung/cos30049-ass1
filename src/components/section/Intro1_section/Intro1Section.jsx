@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { Container, Row, Col } from 'reactstrap'
-import "./intro-section.css"
+import "./intro1_section.css"
 import introImg1 from '../../../assets/images/intro/intro-01.jpg'
 import introImg2 from '../../../assets/images/intro/intro-02.jpg'
 import introImg3 from '../../../assets/images/intro/intro-03.jpg'

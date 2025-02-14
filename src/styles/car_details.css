@@ -1,24 +1,24 @@
 
 /*/////////////////////////////////////////////////////////*/
-.single__nft-img{
+.carDetail_img{
     border-radius: 8px;
 }
 
-.single__nft__content {
+.carDetail_content {
     border: 2px solid #f3c87b ;
     border-radius: 10px;
     padding: 10px;
 }
 
 /*/////////////////////////////////////////////////////////*/
-.single__nft__content h2{
+.carDetail_content h2{
     font-size: 2rem;
     color: hsl(0, 0%, 100%);  
 }
 
 /*/////////////////////////////////////////////////////////*/
 
-.nft__spec{
+.carDetail_spec{
     color: #fcfcfc ;
 }
 
@@ -35,7 +35,7 @@
 
 /*/////////////////////////////////////////////////////////*/ 
 
-.singleNft-btn {
+.CarDetail-btn {
     padding: 8px 25px;
     background: white;
     margin: auto;
@@ -49,45 +49,45 @@
     justify-content: center;
 }
 
-.singleNft-btn a {
+.CarDetail-btn a {
     text-decoration: none;
     color: #493c34  ;
     font-size: 1rem;
     font-weight: 500;
 }
 
-.singleNft-btn i {
+.CarDetail-btn i {
     color: #493c34  ;
     font-weight: 900;
 }
 
-.singleNft-btn:hover{
+.CarDetail-btn:hover{
     background: #f3c87b  ;
 }
 
-.singleNft-btn:hover a{
+.CarDetail-btn:hover a{
     color: white;
 }
 
-.singleNft-btn:hover i{
+.CarDetail-btn:hover i{
     color: white;
 }
 
 @media only screen and (max-width: 991px){
-    .single__nft__content h2{
+    .carDetail_content h2{
         font-size: 1.3rem;
     }
 
-    .single__nft__content p {
+    .carDetail_content p {
         font-size: 0.8rem;
         line-height: 28px;
     }
 
-    .singleNft-btn{
+    .CarDetail-btn{
         width: 100%;
     }
 
-    .singleNft-btn a{
+    .CarDetail-btn a{
         font-size: 0.7rem;
     }
 
@@ -104,7 +104,7 @@
 }
 
 @media only screen and (max-width: 576px){
-    .single__nft__content h2{
+    .carDetail_content h2{
         margin-top: 15px;
     }
 

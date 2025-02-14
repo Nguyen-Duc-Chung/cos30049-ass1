@@ -1,36 +1,25 @@
 
 .market__product__filter{
-    border: 1px solid white;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
-
-.all__category__filter select, 
-.filter__right select
-{ 
-    padding: 8px 25px;
-    font-size: 0.9rem;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: #343444;
-    border-radius: 5px;
-}
-
+/*///////////////////////////////////////////////////////////////////////////*/
 .Search__filter{
-    background-color: #343444;
+    background-color: #ffffff ;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-sizing: 0 10px 25px rgba(0,0,0,0.0) ;
     border-radius: 8px;
 }
 
 .Search__filter input {
-    background-color: #343444;
+    background-color: #ffffff ; 
     width: 100%;
-    height: 40px;
+    height: 35px;
     line-height: 28px;
     padding: 0 10px;
     padding-left: 1rem;
@@ -38,14 +27,66 @@
     border-radius: 8px;
     outline: none;
     color: #000000;
+    font-weight: 500;
     transition: .3s ease;
 }
+
+.Search__filter input::placeholder{
+    color: #000000;
+    font-weight: 500;
+}
+
 .ri-search-line{
-    color: rgb(255, 255, 255);
+    color: #000000 ;
     font-size: 25px;   
+}
+/*///////////////////////////////////////////////////////////////////////////*/
+.all__category__filter select, 
+.filter__right select
+{ 
+    padding: 8px 25px;
+    font-size: 0.9rem;
+    color: #000000 ;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    background: #ffffff ;
+    border-radius: 8px;
+}
+/*///////////////////////////////////////////////////////////////////////////*/
+.price-range-filter {
+    text-align: center;
+    color: #fff;
+}
+
+.price-range-filter label {
+    font-weight: 500;
+}
+
+input[type="range"]{
+    -webkit-appearance:none;
+    height: 11px;
+    background: #d3550c ;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    width:20px;
+    height:20px;
+    background: #ff833b ;
+    position:relative;
+    z-index:3;
+  }
+
+@media only screen and (max-width: 1200px) {
+
+
 }
 
 @media only screen and (max-width: 768px) {
+
 .all__category__filter select, 
 .filter__right select{
     padding: 5px 20px;
@@ -56,10 +97,8 @@
     height: 25px;
 }
 
-.ri-search-line{
-    
+.ri-search-line{ 
     font-size: 18px;   
 }
-
 
 }

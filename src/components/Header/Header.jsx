@@ -40,7 +40,7 @@ function Header(){
                     <div className="logo">
                         <h2 className=" d-flex gap-2 align-items-center">
                             <span>
-                                <i class="ri-car-fill"></i>
+                                <i className="ri-car-fill"></i>
                             </span>
                             HorsePower
                         </h2>
@@ -63,13 +63,13 @@ function Header(){
                     <div className="nav__right d-flex align-items-center  " >
                         <button className="btn d-flex gap-2 align-items-center ">
                             <span>
-                                <i class="ri-wallet-line"></i>
+                                <i className="ri-wallet-line"></i>
                             </span>
                             <Link to='/wallet' > Connect Wallet </Link>
                         </button>
 
                         <span className="mobile__menu">
-                            <i class="ri-menu-line" onClick={toggleMenu}></i>
+                            <i className="ri-menu-line" onClick={toggleMenu}></i>
                         </span>
                     </div>
 

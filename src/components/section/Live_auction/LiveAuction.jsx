@@ -1,10 +1,10 @@
 import React from 'react'
 import { Container,Row,Col } from 'reactstrap'
 import { Link } from 'react-router-dom'
-import './live-auction.css'
+import './live_auction.css'
 
-import NftCard from "../Nft-card/NftCard";
-import { NFT__DATA } from "../../../assets/data/data.js"
+import CarCard from "../Car_card/CarCard.jsx";
+import {  DATA_CARS } from "../../../assets/data/data.js"
 
 
 function LiveAuction(){
@@ -14,15 +14,15 @@ function LiveAuction(){
         <Container>
             <Row>
                 <Col lg='12' className='mb-4' >
-                <div className="live__auction__top d-flex align-items-center ">
+                <div className="live_auction_top d-flex align-items-center ">
                     <h3>Live Auction</h3>
                 </div>
                 </Col>
 
                 {
-                    NFT__DATA.slice(0,4).map((item)=>(
-                        <Col lg='3' md='4' sm='6' className="mb-4" >
-                          <NftCard key={item.id} item={item} />
+                     DATA_CARS.slice(0,4).map((item)=>(
+                        <Col lg='3' md='4' sm='6' className="mb-4" key={item.id}>
+                          <CarCard key={item.id} item={item} />
                         </Col>
                     ))
                 }

@@ -1,15 +1,16 @@
 import React from "react";
 import { Container } from "reactstrap";
-import HeroSection from "../components/ui/HeroSection";
-import LiveAuction from "../components/ui/Live-auction/LiveAuction";
-import Trending from "../components/ui/Trending-section/Trending";
-import StepSection from "../components/ui/Step-section/StepSection";
-import IntroSection from "../components/ui/Intro-section/IntroSection";
+import Intro1Section from "../components/section/Intro1_section/Intro1Section";
+import HeroSection from "../components/section/Intro2_section/Intro2Section";
+import LiveAuction from "../components/section/Live_auction/LiveAuction";
+import Trending from "../components/section/Trending_section/Trending";
+import StepSection from "../components/section/Step_section/StepSection";
+
 
 function Home() {
     return(
         <>
-        <IntroSection/>
+        <Intro1Section/>
         <HeroSection/>
         <LiveAuction />
         <Trending />

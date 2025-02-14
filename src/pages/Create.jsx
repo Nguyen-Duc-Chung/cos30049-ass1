@@ -1,10 +1,10 @@
 import React from "react";
-import CommonSection from '../components/ui/Common-section/CommonSection';
+import CommonSection from '../components/section/Common-section/CommonSection';
 import { Container, Row, Col } from "reactstrap";
-import NftCard from '../components/ui/Nft-card/NftCard'
+import CarCard from '../components/section/Car_card/CarCard';
 import img from '../assets/images/img-01.jpg'
 import avatar from '../assets/images/ava-01.png'
-import '../styles/create-item.css'
+import '../styles/create_item.css'
 
 import { Link } from "react-router-dom";
 
@@ -28,7 +28,7 @@ function Create() {
                 <Row>
                     <Col lg='3' md='4' sm='6'>
                       <h5>Preview Item</h5>
-                      <NftCard item={item} />
+                      <CarCard item={item} />
                     </Col>
 
                     <Col lg='9' md='8' sm='6' >

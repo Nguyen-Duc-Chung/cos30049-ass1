@@ -10,13 +10,13 @@
     background: #38302e;
 }
 
-.list__item {
+.list_item {
     background: transparent !important;
     padding-left: 0 !important ;
     border: none !important ;
 }
 
-.list__item a {
+.list_item a {
     text-decoration: none;
     color: #fff;
     opacity: 85%;
@@ -41,7 +41,7 @@
     opacity: 85% ;
 }
 
-.social__links span a {
+.social_links span a {
     text-decoration: none;
     color: #fff;
     opacity: 85%;
@@ -50,7 +50,7 @@
     transition: 0.3s;
 }
 
-.social__links span a:hover{
+.social_links span a:hover{
     color: #e250e5;
 }
 

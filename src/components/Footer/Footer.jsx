@@ -84,10 +84,10 @@ function Footer(){
                     </Col>
                     <Col lg='2' md='3' sm='6' className="mb-4">
                     <h5>My Account</h5>
-                    <ListGroup className="list__group">
+                    <ListGroup className="list_group">
                         {
                              MY_ACCOUNT.map((item, index)=>(
-                                <ListGroupItem key={index} className='list__item'>
+                                <ListGroupItem key={index} className=' list_item'>
                                     <Link to={item.url} >
                                     {item.display}
                                     </Link>
@@ -98,10 +98,10 @@ function Footer(){
                     </Col>
                     <Col lg='2' md='3' sm='6' className="mb-4">
                     <h5>Company</h5>
-                    <ListGroup className="list__group">
+                    <ListGroup className="list_group">
                         {
                              COMPANY.map((item, index)=>(
-                                <ListGroupItem key={index} className='list__item'>
+                                <ListGroupItem key={index} className=' list_item'>
                                     <Link to={item.url} >
                                     {item.display}
                                     </Link>
@@ -112,10 +112,10 @@ function Footer(){
                     </Col>
                     <Col lg='2' md='3' sm='6' className="mb-4">
                     <h5>Resources</h5>
-                    <ListGroup className="list__group">
+                    <ListGroup className="list_group">
                         {
                              RESOURCES.map((item, index)=>(
-                                <ListGroupItem key={index} className='list__item'>
+                                <ListGroupItem key={index} className=' list_item'>
                                     <Link to={item.url} >
                                     {item.display}
                                     </Link>
@@ -127,7 +127,7 @@ function Footer(){
                     <Col lg='3' md='6' sm='6' className="mb-4">
                     <h5>Newsletter</h5>
                     <input type="text" className="newsletter" placeholder="Email" />
-                    <div className="social__links d-flex gap-3 align-items-center ">
+                    <div className="social_links d-flex gap-3 align-items-center ">
                         <span><Link to='#'><i class="ri-facebook-line"></i></Link></span>
                         <span><Link to='#'><i class="ri-instagram-line"></i></Link></span>
                         <span><Link to='#'><i class="ri-twitter-x-line"></i></Link></span>

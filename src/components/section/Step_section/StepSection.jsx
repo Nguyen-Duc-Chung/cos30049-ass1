@@ -3,9 +3,9 @@ import React from 'react'
 import { Container, Row, Col } from 'reactstrap'
 import { Link } from 'react-router-dom'
 
-import './step-section.css'
+import './step_section.css'
 
-const STEP__DATA =[
+const STEP_INFOR =[
     {
         title:'Setup your wallet',
         desc: `Connect your crypto wallet to securely manage your 
@@ -39,17 +39,17 @@ function StepSection(){
             <Container>
                 <Row>
                     <Col lg='12' className='mb-4'>
-                    <h3 className="step__title">
+                    <h3 className="step_title">
                         Create and sell your Cars
                     </h3>
                     </Col>
 
                     {
-                        STEP__DATA.map((item,index)=>
+                        STEP_INFOR.map((item,index)=>
                         <Col lg='3' md='4' sm='6' key={index} className='mb-4' >
-                            <div className="single__step__item">
+                            <div className="step_card">
                                 <span><i class={item.icon}></i></span>
-                                <div className="step__item__content">
+                                <div className="step_content">
                                     <h5>
                                         <Link to='/wallet' >{item.title}</Link>
                                     </h5>

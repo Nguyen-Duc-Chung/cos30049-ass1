@@ -1,25 +1,23 @@
 import React,{useState} from "react";
-
-import CommonSection from '../components/ui/Common-section/CommonSection'
-import NftCard from '../components/ui/Nft-card/NftCard'
-import { NFT__DATA } from '../assets/data/data'
-
+import CommonSection from '../components/section/Common-section/CommonSection'
+import CarCard from '../components/section/Car_card/CarCard';
+import {  DATA_CARS } from '../assets/data/data'
 import { Container, Row, Col } from "reactstrap"
-
 import '../styles/market.css'
 
 function Market() {
-
-    const [data, setData] = useState(NFT__DATA);
+    const [data, setData] = useState( DATA_CARS);
     const [search, setSearch] = useState('');
+    const [minPrice, setMinPrice] = useState(0);
+    const [maxPrice, setMaxPrice] = useState(10);
 
     const handleCategory =(e)=>{
         const filterValue = e.target.value;
         if (filterValue === "All Categories" || filterValue === "") {
-            setData(NFT__DATA);
+            setData( DATA_CARS);
             return;
         }
-        const filteredData = NFT__DATA.filter(
+        const filteredData =  DATA_CARS.filter(
             item => item.category.toLowerCase() === filterValue.toLowerCase()
         );
 
@@ -30,22 +28,29 @@ function Market() {
         const filterValue = e.target.value
 
         if(filterValue === 'high' ){
-            const filterData = NFT__DATA.filter(item => item.currentBid >= 6)
+            const filterData =  DATA_CARS.filter(item => item.price >= 6)
 
             setData(filterData)
         }
         if(filterValue === 'mid' ){
-            const filterData = NFT__DATA.filter(item => item.currentBid >= 5.50 && item.currentBid < 6 )
+            const filterData =  DATA_CARS.filter(item => item.price >= 5.50 && item.price < 6 )
 
             setData(filterData)
         }
         if(filterValue === 'low' ){
-            const filterData = NFT__DATA.filter(item => item.currentBid >= 4.89 && item.currentBid < 5.50 )
+            const filterData =  DATA_CARS.filter(item => item.price >= 4.89 && item.price < 5.50 )
 
             setData(filterData)
         }
 
     };
+
+    const handlePriceRangeChange = () => {
+        const filteredData =  DATA_CARS.filter(
+          item => item.price >= minPrice && item.price <= maxPrice
+        );
+        setData(filteredData);
+      };
 
     const filteredData = data.filter((item) =>
         search.toLowerCase() === ""
@@ -87,12 +92,38 @@ function Market() {
                                 </select>
                             </div>
 
+                            <div className="price-range-filter">
+                                <label>Price Range: {minPrice} ETH - {maxPrice} ETH</label>
+                                <div className="range-slider-container">
+                                    <input
+                                        type="range"
+                                        min="0"
+                                        max="10"
+                                        step="0.1"
+                                        value={minPrice}
+                                        onChange={(e) => setMinPrice(parseFloat(e.target.value))}
+                                        onInput={handlePriceRangeChange}
+                                        className=" range-slider "
+                                    />
+                                    <input
+                                        type="range"
+                                        min="0"
+                                        max="10"
+                                        step="0.1"
+                                        value={maxPrice}
+                                        onChange={(e) => setMaxPrice(parseFloat(e.target.value))}
+                                        onInput={handlePriceRangeChange}
+                                        className="range-slider "
+                                    />
+                                </div>
+                            </div>
+
                         </div>
                     </Col>
 
                     {filteredData?.map((item) => (
                             <Col lg="3" md="4" sm="6" className="mb-4" key={item.id}>
-                                <NftCard item={item}></NftCard>
+                                <CarCard item={item}></CarCard>
                             </Col>
                         ))}
                 </Row>

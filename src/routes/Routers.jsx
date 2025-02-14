@@ -7,7 +7,7 @@ import Create from '../pages/Create'
 import TransHistory from '../pages/TransHistory'
 import Profile from '../pages/Profile'
 import Wallet from '../pages/Wallet'
-import NftDetails from '../pages/NftDetails'
+import CarDetails from '../pages/CarDetails'
 
 function Router () {
     return(
@@ -20,7 +20,7 @@ function Router () {
         <Route path='/transaction-history' element={<TransHistory/>} />
         <Route path='/profile' element={<Profile/>} />
         <Route path='/wallet' element={<Wallet/>} />
-        <Route path='/market/:id' element={<NftDetails/>} />
+        <Route path='/market/:id' element={<CarDetails/>} />
 
        </Routes>
     );
